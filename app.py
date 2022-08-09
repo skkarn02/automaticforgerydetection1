@@ -13,7 +13,6 @@ from tensorflow.keras.models import *
 import numpy as np
 import pickle as pkl
 from PIL import *
-import cv2
 
 
 #Function for ela 
