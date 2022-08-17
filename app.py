@@ -72,12 +72,12 @@ def prepare_image(image_path):
 
     
 #Load model 
-json_file = open('v2model.json', 'r')
+json_file = open('v1model.json', 'r')
 model_json = json_file.read()
 json_file.close()
 model = model_from_json(model_json)
 # load weights into new model
-model.load_weights("v2model.h5")
+model.load_weights("v1model.h5")
 
 
 #Load model for phase 2 
