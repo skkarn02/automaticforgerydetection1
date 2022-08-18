@@ -72,12 +72,12 @@ def prepare_image(image_path):
 
     
 #Load model 
-json_file = open('v2model.json', 'r')
+json_file = open('v1model.json', 'r')
 model_json = json_file.read()
 json_file.close()
 model = model_from_json(model_json)
 # load weights into new model
-model.load_weights("v2model.h5")
+model.load_weights("v1model.h5")
 
 
 #Load model for phase 2 
@@ -123,6 +123,7 @@ def predict_region(img,model) :
 
 st.title("Image Forgery Detection (Copy-Move Forgery Detection)")
 st.header("Upload a image to get whether image is forged or pristine")
+st.markdown("Demo Video :-Please have a look to this demo video which will guide you how to use this webpage  [link](https://drive.google.com/file/d/1k7VjhQ1MEcwYcS3SvmcZd4zZdiVm-d5y/view?usp=sharing)")
 st.markdown(" Note :- Please use low quality images as dataset on which this model is trained on consist of low quality images. Thankyou")
 # To View Uploaded Image
 image_file = st.file_uploader("Upload Images", type=["png","jpg"])
