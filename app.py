@@ -123,7 +123,7 @@ def predict_region(img,model) :
 
 st.title("Image Forgery Detection (Copy-Move Forgery Detection)")
 st.header("Upload a image to get whether image is forged or pristine")
-st.markdown("Demo Video :-Please have a look to this demo video which will guide you how to use this webpage  [link](https://drive.google.com/file/d/1k7VjhQ1MEcwYcS3SvmcZd4zZdiVm-d5y/view?usp=sharing)")
+st.markdown("Demo Video :-Please have a look to this demo video which will guide you how to use this webpage  [link](https://www.youtube.com/watch?v=ZZO4lCwoAJM)")
 st.markdown(" Note :- Please use low quality images as dataset on which this model is trained on consist of low quality images. Thankyou")
 # To View Uploaded Image
 image_file = st.file_uploader("Upload Images", type=["png","jpg"])
@@ -175,6 +175,8 @@ else :
             st.title("This is a fake image")
             st.image(predi)
             st.write("##### NOTE : Black region is part of image where original image may be tempered Please have a close look on these regions . Thankyou ❤️") 
+   
+st.markdown("Blog :- For Detailed explanation for this project from end to end kindly check my blog on this   [link](https://medium.com/@skkarn0207/image-forgery-detection-copy-move-forgery-detection-72c8cdd23b4f)")
             
         
 
